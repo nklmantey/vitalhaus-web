@@ -39,8 +39,8 @@ export default function Menu() {
         onClick={handleToggle}
         className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#11121B] hover:bg-[#1C1E29] flex flex-col gap-1 md:gap-2 items-center justify-center cursor-pointer"
       >
-        <div className="h-1 md:h-1.5 w-6 md:w-16 bg-[#BEF6FD]" />
-        <div className="h-1 md:h-1.5 w-6 md:w-16 bg-[#BEF6FD]" />
+        <div className="h-1 md:h-1.5 w-6 md:w-8 bg-[#BEF6FD]" />
+        <div className="h-1 md:h-1.5 w-6 md:w-8 bg-[#BEF6FD]" />
       </button>
 
       {isMenuOpen && (

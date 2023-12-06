@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 import { BrightStar, Community, Healthcare, ModernTv } from "iconoir-react";
 import Image from "next/image";
 import HealthImage from "@/public/img-health.jpg";
@@ -6,8 +5,6 @@ import HappyImage from "@/public/img-happy.jpg";
 import ModernImage from "@/public/img-modern.jpg";
 
 export default function Testimonials() {
-  const t = useTranslations("Testimonials");
-
   const testimonials = [
     {
       name: "Gisela Müller",
@@ -67,10 +64,10 @@ export default function Testimonials() {
       {/* header and subtext */}
       <div className="w-full flex flex-col items-center gap-8 justify-center">
         <h1 className="font-cosiUltra text-3xl md:text-6xl text-center tracking-normal lg:tracking-widest">
-          {t("header")}
+          Unsere Vorteile
         </h1>
         <h1 className="font-cosiBold text-sm md:text-xl text-center tracking-normal lg:tracking-widest">
-          {t("subtext")}
+          Warum Sie einen Platz bei uns buchen sollten
         </h1>
       </div>
 
@@ -86,7 +83,9 @@ export default function Testimonials() {
                 {features[0].title}
               </h3>
             </div>
-            <h3 className="font-csMedium text-sm mt-4">{features[0].quote}</h3>
+            <h3 className="font-csMedium text-sm md:text-xl lg:text-xl mt-4">
+              {features[0].quote}
+            </h3>
           </div>
           <div className="w-full md:w-1/2 rounded">
             <Image
@@ -106,7 +105,9 @@ export default function Testimonials() {
                 {features[1].title}
               </h3>
             </div>
-            <h3 className="font-csMedium text-sm mt-4">{features[1].quote}</h3>
+            <h3 className="font-csMedium text-sm md:text-xl lg:text-xl mt-4">
+              {features[1].quote}
+            </h3>
           </div>
           <div className="w-full md:w-1/2 rounded">
             <Image
@@ -126,7 +127,9 @@ export default function Testimonials() {
                 {features[2].title}
               </h3>
             </div>
-            <h3 className="font-csMedium text-sm mt-4">{features[2].quote}</h3>
+            <h3 className="font-csMedium text-sm md:text-xl lg:text-xl mt-4">
+              {features[2].quote}
+            </h3>
           </div>
           <div className="w-full md:w-1/2 rounded">
             <Image
@@ -141,10 +144,10 @@ export default function Testimonials() {
       {/* header and subtext */}
       <div className="w-full flex flex-col items-center gap-8 justify-center">
         <h1 className="font-cosiUltra text-xl md:text-4xl lg:text-6xl text-center tracking-normal lg:tracking-widest">
-          {t("testimonialsHeader")}
+          Kundenbewertungen
         </h1>
         <h1 className="font-cosiBold text-sm md:text-xl text-center tracking-normal lg:tracking-widest">
-          {t("testimonialsSubtext")}
+          Lauschen Sie, was unsere Bewohner über uns sagen
         </h1>
       </div>
 

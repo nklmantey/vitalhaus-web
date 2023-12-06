@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 import Image1 from "@/public/img-1.jpg";
 import Image2 from "@/public/img-2.jpg";
 import Image3 from "@/public/img-3.jpg";
@@ -9,7 +8,6 @@ import Image7 from "@/public/img-7.jpg";
 import Image from "next/image";
 
 export default function Rooms() {
-  const t = useTranslations("Rooms");
   const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7];
 
   return (
@@ -20,10 +18,12 @@ export default function Rooms() {
       {/* header and subtext */}
       <div className="w-full flex flex-col items-center gap-8 justify-center">
         <h1 className="font-cosiUltra text-3xl md:text-6xl text-center tracking-normal lg:tracking-widest">
-          {t("header")}
+          Unsere verfügbaren Zimmer
         </h1>
         <h1 className="font-cosiBold text-sm md:text-xl text-center tracking-normal lg:tracking-widest">
-          {t("subtext")}
+          Entdecken Sie eine Handvoll unserer betreuten Zimmer unten. Wir sind
+          stolz darauf, über das Maß hinauszugehen, um Ihnen transparente
+          Einblicke in den Alltag in jedem Zuhause zu bieten
         </h1>
       </div>
 
