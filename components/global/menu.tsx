@@ -50,7 +50,7 @@ export default function Menu() {
               <h3
                 onClick={() => handleMenuItemClick(item.id)}
                 key={index}
-                className="font-cosiUltra text-xl md:text-3xl lg:text-5xl"
+                className="cursor-pointer font-cosiUltra text-xl md:text-3xl lg:text-5xl"
               >
                 {item.name}
               </h3>
