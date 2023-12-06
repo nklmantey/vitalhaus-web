@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl";
 import Image1 from "@/public/img-1.jpg";
 import Image2 from "@/public/img-2.jpg";
 import Image3 from "@/public/img-3.jpg";
@@ -8,8 +7,12 @@ import Image6 from "@/public/img-6.jpg";
 import Image7 from "@/public/img-7.jpg";
 import Image from "next/image";
 
-export default function Rooms() {
-  const t = useTranslations("Rooms");
+type Props = {
+  header: string;
+  subtext: string;
+};
+
+export default function Rooms({ header, subtext }: Props) {
   const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7];
 
   return (
@@ -20,10 +23,10 @@ export default function Rooms() {
       {/* header and subtext */}
       <div className="w-full flex flex-col items-center gap-8 justify-center">
         <h1 className="font-cosiUltra text-3xl md:text-6xl text-center tracking-normal lg:tracking-widest">
-          {t("header")}
+          {header}
         </h1>
         <h1 className="font-cosiBold text-sm md:text-xl text-center tracking-normal lg:tracking-widest">
-          {t("subtext")}
+          {subtext}
         </h1>
       </div>
 

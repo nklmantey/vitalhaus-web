@@ -5,7 +5,19 @@ import HealthImage from "@/public/img-health.jpg";
 import HappyImage from "@/public/img-happy.jpg";
 import ModernImage from "@/public/img-modern.jpg";
 
-export default function Testimonials() {
+type Props = {
+  header: string;
+  subtext: string;
+  testimonialsHeader: string;
+  testimonialsSubtext: string;
+};
+
+export default function Testimonials({
+  header,
+  subtext,
+  testimonialsHeader,
+  testimonialsSubtext,
+}: Props) {
   const t = useTranslations("Testimonials");
 
   const testimonials = [
@@ -67,10 +79,10 @@ export default function Testimonials() {
       {/* header and subtext */}
       <div className="w-full flex flex-col items-center gap-8 justify-center">
         <h1 className="font-cosiUltra text-3xl md:text-6xl text-center tracking-normal lg:tracking-widest">
-          {t("header")}
+          {header}
         </h1>
         <h1 className="font-cosiBold text-sm md:text-xl text-center tracking-normal lg:tracking-widest">
-          {t("subtext")}
+          {subtext}
         </h1>
       </div>
 
@@ -141,10 +153,10 @@ export default function Testimonials() {
       {/* header and subtext */}
       <div className="w-full flex flex-col items-center gap-8 justify-center">
         <h1 className="font-cosiUltra text-xl md:text-4xl lg:text-6xl text-center tracking-normal lg:tracking-widest">
-          {t("testimonialsHeader")}
+          {testimonialsHeader}
         </h1>
         <h1 className="font-cosiBold text-sm md:text-xl text-center tracking-normal lg:tracking-widest">
-          {t("testimonialsSubtext")}
+          {testimonialsSubtext}
         </h1>
       </div>
 

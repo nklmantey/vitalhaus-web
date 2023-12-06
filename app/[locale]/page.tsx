@@ -4,9 +4,24 @@ import Image from "next/image";
 import Hero from "@/public/hero.jpg";
 import Rooms from "@/components/rooms";
 import Testimonials from "@/components/testimonials";
+import { locales } from "@/config";
+import { notFound } from "next/navigation";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export default function IndexPage() {
+type Props = {
+  params: { locale: string };
+};
+
+export default function IndexPage({ params: { locale } }: Props) {
+  const isValidLocale = locales.some((cur) => cur === locale);
+  if (!isValidLocale) notFound();
+
+  // Enable static rendering
+  unstable_setRequestLocale(locale);
+
   const t = useTranslations("Index");
+  const tRooms = useTranslations("Rooms");
+  const tTestimonials = useTranslations("Testimonials");
 
   return (
     <div>
@@ -33,10 +48,15 @@ export default function IndexPage() {
       </div>
 
       {/* rooms section */}
-      <Rooms />
+      <Rooms header={tRooms("header")} subtext={tRooms("subtext")} />
 
       {/* testimonials section */}
-      <Testimonials />
+      <Testimonials
+        header={tTestimonials("header")}
+        subtext={tTestimonials("subtext")}
+        testimonialsHeader={tTestimonials("testimonialsHeader")}
+        testimonialsSubtext={tTestimonials("testimonialsSubtext")}
+      />
     </div>
   );
 }

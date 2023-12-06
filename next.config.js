@@ -1,5 +1,7 @@
-/** @type {import('next').NextConfig} */
+// @ts-check
 const withNextIntl = require("next-intl/plugin")();
-const nextConfig = {};
 
-module.exports = withNextIntl(nextConfig);
+/** @type {import('next').NextConfig} */
+const config = {};
+
+module.exports = withNextIntl(config);
