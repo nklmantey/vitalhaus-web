@@ -123,6 +123,7 @@ export default function Contact() {
             src={ImageContact}
             alt="old man contacting"
             className="w-full h-auto rounded"
+            priority
           />
         </div>
         <div className="w-full md:w-1/2 flex flex-col gap-8">

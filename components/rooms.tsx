@@ -40,6 +40,7 @@ export default function Rooms() {
                 src={img}
                 alt="rooms"
                 className="w-full h-auto md:h-80 lg:h-96"
+                priority
               />
             </div>
           </div>

@@ -98,6 +98,7 @@ export default function Testimonials() {
               src={HealthImage}
               className="w-full rounded"
               alt="healthy old man"
+              priority
             />
           </div>
         </div>
@@ -122,7 +123,8 @@ export default function Testimonials() {
             <Image
               src={HappyImage}
               className="w-full rounded"
-              alt="healthy old man"
+              alt="happy women"
+              priority
             />
           </div>
         </div>
@@ -147,7 +149,8 @@ export default function Testimonials() {
             <Image
               src={ModernImage}
               className="w-full rounded"
-              alt="healthy old man"
+              alt="modern room"
+              priority
             />
           </div>
         </div>

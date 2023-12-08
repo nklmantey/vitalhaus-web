@@ -47,6 +47,7 @@ export default function IndexPage() {
               src={Hero}
               alt="old woman being helped by caretaker"
               className="w-full h-full rounded object-cover"
+              priority
             />
           </div>
         </div>

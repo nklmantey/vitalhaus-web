@@ -8,6 +8,7 @@ export default function Logo() {
         src={SiteLogo}
         className="w-12 h-12 md:w-16 md:h-16 rounded-full"
         alt="logo"
+        priority
       />
     </div>
   );
