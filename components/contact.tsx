@@ -26,14 +26,14 @@ export default function Contact() {
     },
     {
       type: "Telefon",
-      contact: "ralfstockresidences@outlook.com",
+      contact: "+49 30 631013878",
       icon: Phone,
       actionText: "Nummer kopieren",
       action: handleCopyNumber,
     },
     {
       type: "Addresse",
-      contact: "Zweibrückenstraße 13B, 20539 Hamburg, Deutschland",
+      contact: "Hamburg, Deutschland",
       icon: MapPin,
       actionText: "Öffnen in Karten",
       action: handleOpenMaps,
@@ -51,7 +51,7 @@ export default function Contact() {
   }
 
   function handleCopyNumber() {
-    const phoneNumber = "1234567890";
+    const phoneNumber = "+4930631013878";
 
     try {
       const tempInput = document.createElement("input");
