@@ -33,7 +33,7 @@ export default function Contact() {
     },
     {
       type: "Addresse",
-      contact: "Große Gallusstraße 16-18, Frankfurt am Main, Deutschland",
+      contact: "Zweibrückenstraße 13B, 20539 Hamburg, Deutschland",
       icon: MapPin,
       actionText: "Öffnen in Karten",
       action: handleOpenMaps,
@@ -71,9 +71,7 @@ export default function Contact() {
   }
 
   function handleOpenMaps() {
-    const encodedLocation = encodeURIComponent(
-      "Spaces - Frankfurt, Spaces Omniturm, Große Gallusstraße, Innenstadt I, Germany"
-    );
+    const encodedLocation = encodeURIComponent("Elbtower, Hamburg");
 
     // Create the Google Maps URL
     const mapsUrl = `https://www.google.com/maps?q=${encodedLocation}`;
