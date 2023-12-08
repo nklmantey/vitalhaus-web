@@ -16,7 +16,6 @@ export default function IndexPage() {
   useEffect(() => {
     AOS.init({
       once: true,
-      disable: "mobile",
       duration: 1000,
       easing: "ease-in-out",
     });
