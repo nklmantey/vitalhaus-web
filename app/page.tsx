@@ -21,16 +21,18 @@ export default function IndexPage() {
       easing: "ease-in-out",
     });
   });
+
   return (
     <div>
       <Head>
         <title>VitalHaus</title>
       </Head>
       <ChatbotScript />
+
+      {/* hero and nav */}
       <div className="w-full h-full overflow-hidden px-8 md:px-16 lg:px-24 py-8">
         <Navbar />
 
-        {/* hero section */}
         <div className="w-full flex flex-col items-center gap-4 md:gap-8 justify-center my-8 md:my-20 overflow-hidden">
           <h1
             data-aos="fade-left"

@@ -1,6 +1,33 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
+import { Input } from "./ui/input";
+import { Label } from "./ui/label";
+import Image from "next/image";
+import ImageContact from "@/public/img-contact.jpg";
+import { Textarea } from "./ui/textarea";
+import { Button } from "./ui/button";
 
 export default function Contact() {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [successState, setSuccessState] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  function handleSubmit() {
+    setIsLoading(true);
+  }
+
+  useEffect(() => {
+    if (isLoading) {
+      setTimeout(() => {
+        setSuccessState("Formular erfolgreich übermittelt");
+        setIsLoading(false);
+        setEmail("");
+        setMessage("");
+      }, 5000);
+    }
+  }, [isLoading]);
+
   return (
     <div
       id="kontakt"
@@ -21,6 +48,46 @@ export default function Contact() {
       </div>
 
       {/* form */}
+      <div className="my-8 md:my-16 lg:my-20 flex flex-col md:flex-row items-start md:items-center gap-8">
+        <div className="w-full md:w-1/2">
+          <Image
+            src={ImageContact}
+            alt="old man contacting"
+            className="w-full h-auto rounded"
+          />
+        </div>
+        <div className="w-full md:w-1/2 flex flex-col gap-8">
+          <div className="flex flex-col gap-2">
+            <Label className="font-csBold" htmlFor="email">
+              E-Mail-Adresse
+            </Label>
+            <Input
+              className="font-csBold"
+              type="email"
+              id="email"
+              placeholder="Bitte geben Sie Ihre E-Mail-Adresse ein."
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <Label className="font-csBold" htmlFor="message">
+              Nachricht
+            </Label>
+            <Textarea
+              className="font-csBold"
+              id="message"
+              placeholder="Bitte geben Sie Ihre Nachricht ein"
+            />
+          </div>
+          <Button
+            onClick={() => handleSubmit()}
+            variant="outline"
+            className="font-csBold"
+          >
+            {isLoading ? "Wird übermittelt..." : "Absenden"}
+          </Button>
+          <h2 className="font-csBold text-center -mt-4">{successState}</h2>
+        </div>
+      </div>
     </div>
   );
 }
