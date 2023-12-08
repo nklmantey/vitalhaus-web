@@ -9,32 +9,32 @@ export default function Testimonials() {
     {
       name: "Gisela Müller",
       quote:
-        "Das Vitalhaus hat mein Leben bereichert. Die Betreuung ist hervorragend, und die Gemeinschaft ist herzlich",
+        "Das Ralf's StockHaven hat mein Leben bereichert. Die Betreuung ist hervorragend, und die Gemeinschaft ist herzlich",
     },
     {
       name: "Karl Schmidt",
       quote:
-        "In meinem Alter schätze ich die Annehmlichkeiten und Fürsorge im Vitalhaus. Hier fühle ich mich wirklich zuhause",
+        "In meinem Alter schätze ich die Annehmlichkeiten und Fürsorge im Ralf's StockHaven. Hier fühle ich mich wirklich zuhause",
     },
     {
       name: "Ursula Wagner",
       quote:
-        "Das Vitalhaus bietet eine sichere und liebevolle Umgebung. Es war die beste Entscheidung für meinen Ruhestand",
+        "Das Ralf's StockHaven bietet eine sichere und liebevolle Umgebung. Es war die beste Entscheidung für meinen Ruhestand",
     },
     {
       name: "Dieter Becker",
       quote:
-        "Die Vielfalt der Aktivitäten im Vitalhaus macht den Alltag aufregend. Hier kann man seinen Lebensabend in vollen Zügen genießen",
+        "Die Vielfalt der Aktivitäten im Ralf's StockHaven macht den Alltag aufregend. Hier kann man seinen Lebensabend in vollen Zügen genießen",
     },
     {
       name: "Hannelore Schulz",
       quote:
-        "Die freundlichen Mitarbeiter im Vitalhaus kümmern sich rührend um uns. Es ist ein Ort des Vertrauens und der Geborgenheit",
+        "Die freundlichen Mitarbeiter im Ralf's StockHaven kümmern sich rührend um uns. Es ist ein Ort des Vertrauens und der Geborgenheit",
     },
     {
       name: "Friedrich Mayer",
       quote:
-        "Im Vitalhaus habe ich nicht nur ein Zimmer gefunden, sondern eine Gemeinschaft, die wie eine Familie ist. Hier fühlt man sich wirklich geborgen",
+        "Im Ralf's StockHaven habe ich nicht nur ein Zimmer gefunden, sondern eine Gemeinschaft, die wie eine Familie ist. Hier fühlt man sich wirklich geborgen",
     },
   ];
 

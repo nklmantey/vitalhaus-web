@@ -4,10 +4,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "VitalHaus",
-    template: "VitalHaus",
+    default: "Ralf's StockHaven",
+    template: "Ralf's StockHaven",
   },
-  description: "German housing",
+  description: "Senioren Luxuswohnungen",
   robots: {
     index: true,
     follow: true,

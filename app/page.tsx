@@ -7,7 +7,6 @@ import Testimonials from "@/components/testimonials";
 import FAQ from "@/components/faq";
 import Contact from "@/components/contact";
 import ChatbotScript from "@/components/script";
-import Head from "next/head";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,9 +22,6 @@ export default function IndexPage() {
 
   return (
     <div>
-      <Head>
-        <title>VitalHaus</title>
-      </Head>
       <ChatbotScript />
 
       {/* hero and nav */}
@@ -37,7 +33,7 @@ export default function IndexPage() {
             data-aos="fade-left"
             className="font-cosiUltra text-3xl md:text-6xl text-center tracking-normal lg:tracking-widest"
           >
-            Willkommen im VitalHaus
+            Willkommen im Ralf&apos;s StockHaven
           </h1>
           <h1
             data-aos="fade-right"
