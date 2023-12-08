@@ -1,6 +1,7 @@
 import "./globals.css";
 import LocalFont from "next/font/local";
 import { Metadata } from "next";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: {
@@ -59,7 +60,10 @@ export default function RootLayout({
         circularStdMedium.variable,
       ].join(" ")}
     >
-      <body>{children}</body>
+      <body>
+        <main>{children}</main>
+        <Toaster />
+      </body>
     </html>
   );
 }
