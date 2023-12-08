@@ -59,21 +59,27 @@ export default function Testimonials() {
   return (
     <div
       id="kundenbewertungen"
-      className="bg-[#0E101C] w-full h-fit px-8 md:px-16 lg:px-24 py-8"
+      className="bg-[#0E101C] w-full h-fit px-8 md:px-16 lg:px-24 py-8 overflow-hidden"
     >
       {/* header and subtext */}
-      <div className="w-full flex flex-col items-center gap-8 justify-center">
+      <div
+        data-aos="fade-up"
+        className="w-full flex flex-col items-center gap-8 justify-center"
+      >
         <h1 className="font-cosiUltra text-3xl md:text-6xl text-center tracking-normal lg:tracking-widest">
           Unsere Vorteile
         </h1>
-        <h1 className="font-cosiBold text-sm md:text-xl text-center tracking-normal lg:tracking-widest">
+        <h1 className="font-csBold text-sm md:text-xl text-center">
           Warum Sie einen Platz bei uns buchen sollten
         </h1>
       </div>
 
       {/* features map */}
-      <div className="my-8 md:my-16 lg:my-20 flex flex-col gap-20 lg:gap-28 xl:gap-36">
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 lg:gap-20">
+      <div className="my-8 md:my-16 lg:my-20 flex flex-col gap-20 lg:gap-28 xl:gap-36 ">
+        <div
+          data-aos="fade-left"
+          className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 lg:gap-20"
+        >
           <div className="p-2 md:p-4 w-full md:w-1/2">
             <div className="flex gap-4 items-center">
               <div className="w-8 h-8 md:w-12 md:h-12 rounded-full flex items-center justify-center bg-[#11121B] hover:bg-[#1C1E29]">
@@ -95,7 +101,10 @@ export default function Testimonials() {
             />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row-reverse items-start md:items-center gap-4 md:gap-8 lg:gap-20">
+        <div
+          data-aos="fade-right"
+          className="flex flex-col md:flex-row-reverse items-start md:items-center gap-4 md:gap-8 lg:gap-20"
+        >
           <div className="p-2 md:p-4 w-full md:w-1/2">
             <div className="flex gap-4 items-center">
               <div className="w-8 h-8 md:w-12 md:h-12 rounded-full flex items-center justify-center bg-[#11121B] hover:bg-[#1C1E29]">
@@ -117,7 +126,10 @@ export default function Testimonials() {
             />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 lg:gap-20">
+        <div
+          data-aos="fade-left"
+          className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-8 lg:gap-20"
+        >
           <div className="p-2 md:p-4 w-full md:w-1/2">
             <div className="flex gap-4 items-center">
               <div className="w-8 h-8 md:w-12 md:h-12 rounded-full flex items-center justify-center bg-[#11121B] hover:bg-[#1C1E29]">
@@ -142,17 +154,23 @@ export default function Testimonials() {
       </div>
 
       {/* header and subtext */}
-      <div className="w-full flex flex-col items-center gap-8 justify-center">
+      <div
+        data-aos="fade-up"
+        className="w-full flex flex-col items-center gap-8 justify-center"
+      >
         <h1 className="font-cosiUltra text-xl md:text-4xl lg:text-6xl text-center tracking-normal lg:tracking-widest">
           Kundenbewertungen
         </h1>
-        <h1 className="font-cosiBold text-sm md:text-xl text-center tracking-normal lg:tracking-widest">
+        <h1 className="font-csBold text-sm md:text-xl text-center">
           Lauschen Sie, was unsere Bewohner über uns sagen
         </h1>
       </div>
 
       {/* testimonials map */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-8 md:my-16 lg:my-20 gap-4 md:gap-8 items-start justify-center">
+      <div
+        data-aos="fade-left"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-8 md:my-16 lg:my-20 gap-4 md:gap-8 items-start justify-center"
+      >
         {testimonials.map((testimonial, index) => (
           <div key={index} className="bg-[#1C1E29] p-4 rounded">
             <div className="flex gap-4 items-center">

@@ -12,15 +12,16 @@ export default function Rooms() {
 
   return (
     <div
+      data-aos="fade-up"
       id="zimmer"
-      className="bg-[#141727] w-full h-fit px-8 md:px-16 lg:px-24 py-8"
+      className="bg-[#141727] w-full h-fit px-8 md:px-16 lg:px-24 py-8 overflow-hidden"
     >
       {/* header and subtext */}
       <div className="w-full flex flex-col items-center gap-8 justify-center">
         <h1 className="font-cosiUltra text-3xl md:text-6xl text-center tracking-normal lg:tracking-widest">
           Unsere verfügbaren Zimmer
         </h1>
-        <h1 className="font-cosiBold text-sm md:text-xl text-center tracking-normal lg:tracking-widest">
+        <h1 className="font-csBold text-sm md:text-xl text-center">
           Entdecken Sie eine Handvoll unserer betreuten Zimmer unten. Wir sind
           stolz darauf, über das Maß hinauszugehen, um Ihnen transparente
           Einblicke in den Alltag in jedem Zuhause zu bieten

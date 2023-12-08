@@ -34,7 +34,7 @@ export default function Menu() {
   }
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <button
         onClick={handleToggle}
         className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#11121B] hover:bg-[#1C1E29] flex flex-col gap-1 md:gap-2 items-center justify-center cursor-pointer"
@@ -44,7 +44,10 @@ export default function Menu() {
       </button>
 
       {isMenuOpen && (
-        <div className="w-full h-full flex flex-row bg-[#0E101C] fixed inset-0 px-8 md:px-16 lg:px-24 py-8">
+        <div
+          data-aos="fade-down"
+          className="w-full h-full flex flex-row bg-[#0E101C] absolute z-10 inset-0 px-8 md:px-16 lg:px-24 py-8"
+        >
           <div className="w-1/2 flex flex-col gap-10 md:gap-20">
             {navigation.map((item, index) => (
               <h3
