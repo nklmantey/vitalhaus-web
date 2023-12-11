@@ -5,9 +5,10 @@ import { Toaster } from "@/components/ui/toaster";
 import Head from "next/head";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.ralfsstockhaven.de/"),
   title: {
     default: "Ralf's StockHaven",
-    template: "%s | Senioren Luxuswohnungen",
+    template: "%s - Ralf's StockHaven",
     absolute: "Ralf's StockHaven",
   },
   keywords: [
@@ -19,6 +20,9 @@ export const metadata: Metadata = {
     "ralf's stockhaven",
     "ralfs stockhaven",
     "ralfs stock haven",
+    "Willkommen im Ralf's StockHaven",
+    "Unsere verfügbaren Zimmer",
+    "Unsere Vorteile",
   ],
   description: "Senioren Luxuswohnungen",
   robots: {
@@ -48,7 +52,7 @@ export const metadata: Metadata = {
     url: "https://www.ralfsstockhaven.de/",
     siteName: "Ralf's StockHaven",
     images: "/logo.svg",
-    locale: "de",
+    locale: "de_DE",
     type: "website",
   },
   twitter: {
@@ -57,7 +61,6 @@ export const metadata: Metadata = {
     description: "Senioren Luxuswohnungen",
     siteId: "muller5000stockhaven",
     creator: "@muller",
-    creatorId: "muller5000stockhaven",
     images: "/logo.svg",
   },
   assets: [
