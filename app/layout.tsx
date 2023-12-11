@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     absolute: "Ralf's StockHaven",
   },
   keywords: [
+    "Senioren Luxuswohnungen",
     "Ralf's StockHaven",
     "Ralf's Stockhaven",
     "Ralfs Stockhaven",
